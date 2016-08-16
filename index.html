@@ -89,13 +89,14 @@
     ];
 
     for (l in allLayers) {
-      console.log(l);
       if (map.hasLayer(allLayers[l])) {
         checkedLayers.push(allLayers[l]);
       }
     }
 
-    map.fitBounds(L.featureGroup(checkedLayers).getBounds());
+    if (checkedLayers) {
+      map.fitBounds(L.featureGroup(checkedLayers).getBounds());
+    }
   }
 
   map.on('layeradd', function() {
