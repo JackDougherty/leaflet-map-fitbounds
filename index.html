@@ -94,7 +94,7 @@
       }
     }
 
-    if (checkedLayers) {
+    if (checkedLayers.length > 0) {
       map.fitBounds(L.featureGroup(checkedLayers).getBounds());
     }
   }
