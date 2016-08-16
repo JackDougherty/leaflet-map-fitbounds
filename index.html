@@ -80,6 +80,33 @@
 	// map.fitBounds(NewBritain50.getBounds()); // zooms to fit this layer
 	controlLayers.addOverlay(NewBritain50, 'New Britain 50 mile (magenta)');
 
+  function niceBounds() {
+    var checkedLayers = [];
+    var allLayers = [
+      NewBritain10,
+      NewBritain25,
+      NewBritain50
+    ];
+
+    for (l in allLayers) {
+      if (map.hasLayer(allLayers[l])) {
+        checkedLayers.push(allLayers[l]);
+      }
+    }
+
+    if (checkedLayers.length > 0) {
+      map.fitBounds(L.featureGroup(checkedLayers).getBounds());
+    }
+  }
+
+  map.on('layeradd', function() {
+    niceBounds();
+  });
+
+  map.on('layerremove', function() {
+    niceBounds();
+  });
+
 	</script>
 </body>
 </html>
