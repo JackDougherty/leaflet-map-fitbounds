@@ -82,16 +82,17 @@
 
   function niceBounds() {
     var checkedLayers = [];
+    var allLayers = [
+      NewBritain10,
+      NewBritain25,
+      NewBritain50
+    ];
 
-    for (l in
-      [ NewBritain10,
-        NewBritain25,
-        NewBritain50
-      ]) {
-        console.log(l);
-        if (map.hasLayer(l)) {
-          checkedLayers.push(l);
-        }
+    for (l in allLayers) {
+      console.log(l);
+      if (map.hasLayer(allLayers[l])) {
+        checkedLayers.push(allLayers[l]);
+      }
     }
 
     console.log(checkedLayers);
