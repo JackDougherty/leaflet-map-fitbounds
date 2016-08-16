@@ -93,7 +93,8 @@
         }
     }
 
-    map.fitBounds(checkedLayers.getBounds());
+    map.fitBounds(L.featureGroup(checkedLayers).getBounds());
+    console.log("********");
   }
 
   map.on('layeradd', function() {
