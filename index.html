@@ -63,7 +63,7 @@
 		color: 'blue',
 		distanceMarkers: { showAll: 11, offset: 1609} // meters per mile
 	}).addTo(map);
-	map.fitBounds(NewBritain10.getBounds()); // zooms to fit this layer
+	//map.fitBounds(NewBritain10.getBounds()); // zooms to fit this layer
 	controlLayers.addOverlay(NewBritain10, 'New Britain 10 mile (blue)');
 
 	var NewBritain25 = new L.GPX("routes/NewBritain25.gpx", {
