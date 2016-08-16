@@ -96,6 +96,14 @@
     map.fitBounds(checkedLayers.getBounds());
   }
 
+  map.on('layeradd', function() {
+    niceBounds();
+  });
+
+  map.on('layerremove', function() {
+    niceBounds();
+  });
+
 	</script>
 </body>
 </html>
