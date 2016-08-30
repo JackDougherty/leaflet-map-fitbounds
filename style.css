@@ -3,12 +3,12 @@ body { margin:0; padding:0; }
 
 .dist-marker {
 	font-size: 12px;
-	border: 1px solid #777;
+  font-weight: bold;
+  line-height: 12px;
 	border-radius: 10px;
 	text-align: center;
-	color: #000;
-	background: #fff;
-	padding: 1px 3px 4px 1px;
+	color: white;
+	padding: 2px 2px 2px 2px;
 }
 
 .bg-blue { background: blue; }
