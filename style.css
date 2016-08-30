@@ -10,3 +10,7 @@ body { margin:0; padding:0; }
 	background: #fff;
 	padding: 1px 3px 4px 1px;
 }
+
+.bg-blue { background: blue; }
+.bg-green { background: green; }
+.bg-magenta { background: magenta; }

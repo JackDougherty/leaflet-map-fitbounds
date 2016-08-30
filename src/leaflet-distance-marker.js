@@ -30,6 +30,9 @@ L.DistanceMarkers = L.LayerGroup.extend({
 		var showAll = Math.min(map.getMaxZoom(), options.showAll || 12);
 		var cssClass = options.cssClass || 'dist-marker';
 
+    var color = options.color || 'bg-blue';
+    cssClass += ' ' + color;
+
 		var zoomLayers = {};
 		// Get line coords as an array
 		var coords = line;

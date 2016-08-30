@@ -61,21 +61,21 @@
 
 	var NewBritain10 = new L.GPX("routes/NewBritain10.gpx", {
 		color: 'blue',
-		distanceMarkers: { showAll: 11, offset: 1609} // meters per mile
+		distanceMarkers: { showAll: 11, offset: 1609, color: 'bg-blue'} // meters per mile
 	}).addTo(map);
 	map.fitBounds(NewBritain10.getBounds()); // zooms to fit this layer
 	controlLayers.addOverlay(NewBritain10, 'New Britain 10 mile (blue)');
 
 	var NewBritain25 = new L.GPX("routes/NewBritain25.gpx", {
 		color: 'green',
-		distanceMarkers: { showAll: 11, offset: 1609} // meters per mile
+		distanceMarkers: { showAll: 11, offset: 1609, color: 'bg-green'} // meters per mile
 	});
 	// map.fitBounds(NewBritain25.getBounds()); // zooms to fit this layer
 	controlLayers.addOverlay(NewBritain25, 'New Britain 25 mile (green)');
 
 	var NewBritain50 = new L.GPX("routes/NewBritain50.gpx", {
 		color: 'magenta',
-		distanceMarkers: { showAll: 11, offset: 1609} // meters per mile
+		distanceMarkers: { showAll: 11, offset: 1609, color: 'bg-magenta'} // meters per mile
 	});
 	// map.fitBounds(NewBritain50.getBounds()); // zooms to fit this layer
 	controlLayers.addOverlay(NewBritain50, 'New Britain 50 mile (magenta)');
